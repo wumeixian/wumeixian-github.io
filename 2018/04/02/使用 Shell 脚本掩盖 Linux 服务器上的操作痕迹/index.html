@@ -5,12 +5,30 @@
   
   <title>wumeixian的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹使用 Shell 脚本在 Linux 服务器上能够控制、毁坏或者获取任何东西，通过一些巧妙的攻击方法黑客可能会获取巨大的价值，但大多数攻击也留下踪迹。当然，这些踪迹也可通过 Shell 脚本等方法来隐藏。  寻找攻击证据就从攻击者留下的这些痕迹开始，如文件的修改日期。每一个 Linux 文件系统中的每个文件都保存着修改日期。系统管理员发现文">
+<meta property="og:type" content="article">
 <meta property="og:title" content="wumeixian的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/index.html">
 <meta property="og:site_name" content="wumeixian的博客">
+<meta property="og:description" content="使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹使用 Shell 脚本在 Linux 服务器上能够控制、毁坏或者获取任何东西，通过一些巧妙的攻击方法黑客可能会获取巨大的价值，但大多数攻击也留下踪迹。当然，这些踪迹也可通过 Shell 脚本等方法来隐藏。  寻找攻击证据就从攻击者留下的这些痕迹开始，如文件的修改日期。每一个 Linux 文件系统中的每个文件都保存着修改日期。系统管理员发现文">
+<meta property="og:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/WKtM9X8hT25tqcUHNPSu43ruL7THOKlLAVIiaX5Ey4op0W9NRO8hf1rdcH40XW7yzSjwaysmKqEKLJicK04SO6AQ/?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:image" content="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==">
+<meta property="og:updated_time" content="2018-04-02T06:17:11.917Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wumeixian的博客">
+<meta name="twitter:description" content="使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹使用 Shell 脚本在 Linux 服务器上能够控制、毁坏或者获取任何东西，通过一些巧妙的攻击方法黑客可能会获取巨大的价值，但大多数攻击也留下踪迹。当然，这些踪迹也可通过 Shell 脚本等方法来隐藏。  寻找攻击证据就从攻击者留下的这些痕迹开始，如文件的修改日期。每一个 Linux 文件系统中的每个文件都保存着修改日期。系统管理员发现文">
+<meta name="twitter:image" content="http://mmbiz.qpic.cn/mmbiz_jpg/WKtM9X8hT25tqcUHNPSu43ruL7THOKlLAVIiaX5Ey4op0W9NRO8hf1rdcH40XW7yzSjwaysmKqEKLJicK04SO6AQ/?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1">
   
     <link rel="alternative" href="/atom.xml" title="wumeixian的博客" type="application/atom+xml">
   
@@ -24,9 +42,6 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
-    
-    
-  
   
       <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
   
@@ -38,8 +53,8 @@
           rootUrl: '/',
           fancybox: true,
           animate: true,
-          isHome: true,
-          isPost: false,
+          isHome: false,
+          isPost: true,
           isArchive: false,
           isTag: false,
           isCategory: false,
@@ -211,9 +226,7 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap">
-  
-    <article id="post-使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/" class="article-date">
@@ -321,300 +334,190 @@
 
       
       
-    </div>
-    
-    <div class="article-info article-info-index">
+        <div class="page-reward">
+          <p><a href="javascript:void(0)" onclick="dashangToggle()" class="dashang">赏</a></p>
+          <div class="hide_box"></div>
+          <div class="shang_box">
+            <a class="shang_close" href="javascript:void(0)" onclick="dashangToggle()">×</a>
+            <div class="shang_tit">
+              <p>纯属好玩</p>
+            </div>
+            <div class="shang_payimg">
+              <img src="/img/alipayimg.jpg" alt="扫码支持" title="扫一扫" />
+            </div>
+              <div class="pay_explain">扫码打赏，你说多少就多少</div>
+            <div class="shang_payselect">
+              
+                <div class="pay_item checked" data-id="alipay">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/alipay.png" alt="支付宝" /></span>
+                </div>
+              
+              
+                <div class="pay_item" data-id="wechat">
+                  <span class="radiobox"></span>
+                  <span class="pay_logo"><img src="/img/weixin.png" alt="微信" /></span>
+                </div>
+              
+            </div>
+            <div class="shang_info">
+              <p>打开<span id="shang_pay_txt">支付宝</span>扫一扫，即可进行扫码打赏哦</p>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+        <script type="text/javascript">
+          $(".pay_item").click(function(){
+            $(this).addClass('checked').siblings('.pay_item').removeClass('checked');
+            var dataid=$(this).attr('data-id');
+            $(".shang_payimg img").attr("src","/img/"+dataid+"img.jpg");
+            $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
+          });
+          function dashangToggle(){
+            
+            $(".hide_box").fadeToggle();
+            $(".shang_box").fadeToggle();
+          }
+        </script>
       
-      
-
-      
-      
-      <div class="clearfix"></div>
     </div>
     
   </div>
   
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-影响全球的 CPU 漏洞深度解读：熔断与幽灵" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/28/影响全球的 CPU 漏洞深度解读：熔断与幽灵/" class="article-date">
-      <time datetime="2018-03-27T16:37:07.943Z" itemprop="datePublished">2018-03-28</time>
-</a>
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/"></a></p>
+        <p><span>文章作者:</span><a href="/" title="访问 meixian wu 的个人博客">meixian wu</a></p>
+        <p><span>发布时间:</span>2018年04月02日 - 14时16分</p>
+        <p><span>最后更新:</span>2018年04月02日 - 14时17分</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/" title="">http://yoursite.com/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/　　作者: meixian wu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script src="/js/clipboard.min.js"></script>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" title="中国大陆 (CC BY-NC-SA 3.0 CN)" target = "_blank">"署名-非商用-相同方式共享 3.0"</a> 转载请保留原文链接及作者。
+        </p>
     </div>
+
+
+
+<nav id="article-nav">
   
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h2 id="影响全球的-CPU-漏洞深度解读：熔断与幽灵"><a href="#影响全球的-CPU-漏洞深度解读：熔断与幽灵" class="headerlink" title="影响全球的 CPU 漏洞深度解读：熔断与幽灵"></a>影响全球的 CPU 漏洞深度解读：熔断与幽灵</h2><h3 id="一-漏洞背景和影响"><a href="#一-漏洞背景和影响" class="headerlink" title="一 漏洞背景和影响"></a><strong>一 漏洞背景和影响</strong></h3><p>1月4日，国外安全研究机构公布了两组CPU漏洞：</p>
-<ul>
-<li>Meltdown（熔断），对应漏洞CVE-2017-5754</li>
-<li>Spectre（幽灵），对应漏洞CVE-2017-5753/CVE-2017-5715</li>
-</ul>
-<p>由于漏洞严重而且影响范围广泛，引起了全球的关注。利用Meltdown漏洞，低权限用户可以访问内核的内容，获取本地操作系统底层的信息；当用户通过浏览器访问了包含Spectre恶意利用程序的网站时，用户的如帐号，密码，邮箱等个人隐私信息可能会被泄漏；在云服务场景中，利用Spectre可以突破用户间的隔离，窃取其他用户的数据。Meltdown漏洞影响几乎所有的Intel CPU和部分ARM CPU，而Spectre则影响所有的Intel CPU和AMD CPU，以及主流的ARM CPU。从个人电脑、服务器、云计算机服务器到移动端的智能手机，都受到这两组硬件漏洞的影响。</p>
-<p><img src="http://mmbiz.qpic.cn/mmbiz_jpg/dkwuWwLoRK9JOL9IP5hzb25ibpAbYY6hIGBINJLkP09wso51st7p8hYBpHHVvQHwpqrVHB315tCNAPoE7KTsg7Q/?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="img"></p>
-<p>这两组漏洞来源于芯片厂商为了提高CPU性能而引入的新特性。现代CPU为了提高处理性能，会采用乱序执行(Out-of-Order Execution)和预测执行(SpeculativePrediction)。乱序执行是指CPU并不是严格按照指令的顺序串行执行，而是根据相关性对指令进行分组并行执行，最后汇总处理各组指令执行的结果。预测执行是CPU根据当前掌握的信息预测某个条件判断的结果，然后选择对应的分支提前执行。</p>
-<p>乱序执行和预测执行在遇到异常或发现分支预测错误时，CPU会丢弃之前执行的结果，将CPU的状态恢复到乱序执行或预测执行前的正确状态，然后选择对应正确的指令继续执行。这种异常处理机制保证了程序能够正确的执行，但是问题在于，CPU恢复状态时并不会恢复CPU缓存的内容，而这两组漏洞正是利用了这一设计上的缺陷进行测信道攻击。</p>
-<h3 id="二-漏洞原理解析"><a href="#二-漏洞原理解析" class="headerlink" title="二 漏洞原理解析"></a><strong>二 漏洞原理解析</strong></h3><p><strong>1、Meltdown漏洞原理</strong></p>
-<p>乱序执行可以简单的分为三个阶段，如下图所示：</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p>每个阶段执行的操作如下：</p>
-<p>1）获取指令，解码后存放到执行缓冲区Reservations Stations</p>
-<p>2）乱序执行指令，结果保存在一个结果序列中</p>
-<p>3）退休期Retired Circle，重新排列结果序列及安全检查（如地址访问的权限检查），提交结果到寄存器</p>
-<p>结合Meltdown利用的代码片段来看：</p>
-<blockquote>
-<p>; rcx = kernel address</p>
-<p>; rbx = probe array</p>
-<p>1  mov al, byte [rcx]</p>
-<p>2  shl rax, 0xc</p>
-<p>3  mov rbx, qword [rbx + rax]</p>
-</blockquote>
-<p>Meltdown漏洞的利用过程有4个步骤：</p>
-<p>1)指令获取解码</p>
-<p>2)乱序执行3条指令，指令2和指令3要等指令1中的读取内存地址的内容完成后才开始执行，指令3会将要访问的rbx数组元素所在的页加载到CPU Cache中。</p>
-<p>3)对2)的结果进行重新排列，对1-3条指令进行安全检测，发现访问违例，会丢弃当前执行的所有结果，恢复CPU状态到乱序执行之前的状态，但是并不会恢复CPU Cache的状态</p>
-<p>4)通过缓存测信道攻击，可以知道哪一个数组元素被访问过，也即对应的内存页存放在CPU Cache中，从而推测出内核地址的内容</p>
-<p><strong>2、Spectre漏洞原理</strong></p>
-<p>与Meltdown类似，Spectre的原理是，当CPU发现分支预测错误时会丢弃分支执行的结果，恢复CPU的状态，但是不会恢复CPU Cache的状态，利用这一点可以突破进程间的访问限制（如浏览器沙箱）获取其他进程的数据。</p>
-<p>Spectre的利用代码片段：</p>
-<blockquote>
-<p>if (x &lt; array1_size) {</p>
-<p>y = array2[array1[x] * 256];</p>
-<p>// do something using Y that is</p>
-<p>// observable when speculatively executed</p>
-<p>}</p>
-</blockquote>
-<p>具体攻击过程可以分为三个阶段：</p>
-<p>1)训练CPU的分支预测单元使其在运行利用代码时会进行特定的预测执行</p>
-<p>2)预测执行使得CPU将要访问的地址的内容读取到CPU Cache中</p>
-<p>3)通过缓存测信道攻击，可以知道哪一个数组元素被访问过，也即对应的内存页存放在CPU Cache中，从而推测出地址的内容。</p>
-<p>### </p>
-<h3 id="三-漏洞验证"><a href="#三-漏洞验证" class="headerlink" title="三 漏洞验证"></a><strong>三 漏洞验证</strong></h3><p>目前开源社区github已经放出来了漏洞的验证代码（PoC），如下：</p>
-<ul>
-<li><a href="https://github.com/Eugnis/spectre-attack" target="_blank" rel="noopener">https://github.com/Eugnis/spectre-attack</a></li>
-<li><a href="https://github.com/feruxmax/meltdown" target="_blank" rel="noopener">https://github.com/feruxmax/meltdown</a></li>
-<li><a href="https://github.com/gkaindl/meltdown-poc" target="_blank" rel="noopener">https://github.com/gkaindl/meltdown-poc</a></li>
-<li><a href="https://github.com/turbo/KPTI-PoC-Collection" target="_blank" rel="noopener">https://github.com/turbo/KPTI-PoC-Collection</a></li>
-</ul>
-<p>经过我们和其他安全研究人员实际验证，漏洞可在Windows、Linux、Mac-OS等操作系统下，成功读取任意指定内存地址的内容，如下图所示：</p>
-<p>Windows：</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p>Ubuntu 16.04：</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p>此外，有安全研究人员验证了可以通过漏洞获取到用户正在输入的密码，不过暂未放出相关代码。如下图所示：</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p>### </p>
-<h3 id="四-漏洞修复进展"><a href="#四-漏洞修复进展" class="headerlink" title="四 漏洞修复进展"></a><strong>四 漏洞修复进展</strong></h3><p>针对这两组漏洞，各家芯片厂商，操作系统厂商，浏览器厂商，以及云服务厂商，都积极采取措施，发布安全公告，并及时推出缓解措施和修复补丁。</p>
-<p><strong>1、芯片厂商</strong></p>
-<p>1.1 Intel</p>
-<p>Intel已经确认自身CPU中存在相关问题，并正与包括AMD、ARM和多家操作系统厂商在内的许多其他科技公司紧密合作，制定行业范围的方法，以便及时和建设性地解决这些漏洞。另外Intel认为有些媒体里面的报道并不准确，这些问题不仅仅Intel，其他厂商的CPU中也存在相关问题。</p>
-<p>这些问题的修复对性能的影响和具体的工作场景相关，对一般用户而言，影响并不显著，而且随着时间的推移这些影响都会得到缓解。</p>
-<p>Intel已经提供软件和固件更新以解决这些漏洞，预计下周末之前会修复最近5年中90%的CPU。Intel的安全公告如下：</p>
-<ul>
-<li><a href="https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00088&amp;languageid=en-fr" target="_blank" rel="noopener">https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00088&amp;languageid=en-fr</a></li>
-<li><a href="https://newsroom.intel.com/news/intel-responds-to-security-research-findings/" target="_blank" rel="noopener">https://newsroom.intel.com/news/intel-responds-to-security-research-findings/</a></li>
-<li><a href="https://newsroom.intel.com/news-releases/intel-issues-updates-protect-systems-security-exploits/" target="_blank" rel="noopener">https://newsroom.intel.com/news-releases/intel-issues-updates-protect-systems-security-exploits/</a></li>
-<li><a href="https://www.intel.com/content/www/us/en/architecture-and-technology/facts-about-side-channel-analysis-and-intel-products.html" target="_blank" rel="noopener">https://www.intel.com/content/www/us/en/architecture-and-technology/facts-about-side-channel-analysis-and-intel-products.html</a></li>
-</ul>
-<p>1.2 ARM</p>
-<p>ARM确认大部分处理器不受漏洞影响，但给出了一个受影响的处理器列表。ARM认为，利用这些漏洞进行攻击需要在本地运行恶意软件，用户及时更新软件和不点击来历不明的链接会降低攻击风险。针对linux上的程序，ARM提供了新编译器，可用新编译器重新编译。另外发布了Linux ARM内核补丁，用于修补漏洞，相关页面如下：</p>
-<ul>
-<li><a href="https://developer.arm.com/support/security-update/download-the-whitepaper" target="_blank" rel="noopener">https://developer.arm.com/support/security-update/download-the-whitepaper</a></li>
-<li><a href="https://developer.arm.com/support/security-update" target="_blank" rel="noopener">https://developer.arm.com/support/security-update</a></li>
-</ul>
-<p>1.3 AMD</p>
-<p>AMD针对每个漏洞做了回复，第一个漏洞由软件、操作系统厂商发布补丁解决，性能影响非常轻微，其他两个漏洞由于AMD CPU特殊的架构，都不受影响。具体如下：</p>
-<ul>
-<li><a href="https://www.amd.com/en/corporate/speculative-execution" target="_blank" rel="noopener">https://www.amd.com/en/corporate/speculative-execution</a></li>
-</ul>
-<p><strong>2、操作系统</strong></p>
-<p>2.1 Windows</p>
-<p>微软已经发布了安全通告，修复了IE、Edge、Windows内核中相关问题，并针对普通用户、服务器用户、云用户各自给出了防护指南。</p>
-<p>微软普通用户：</p>
-<ul>
-<li><a href="https://support.microsoft.com/help/4073119" target="_blank" rel="noopener">https://support.microsoft.com/help/4073119</a></li>
-</ul>
-<p>服务器用户：</p>
-<ul>
-<li><a href="https://support.microsoft.com/help/4072698" target="_blank" rel="noopener">https://support.microsoft.com/help/4072698</a></li>
-</ul>
-<p>云用户：</p>
-<ul>
-<li><a href="https://support.microsoft.com/help/4073235" target="_blank" rel="noopener">https://support.microsoft.com/help/4073235</a></li>
-</ul>
-<p>微软安全通告：</p>
-<ul>
-<li><a href="https://support.microsoft.com/en-us/help/4073235/cloud-protections-speculative-execution-side-channel-vulnerabilities" target="_blank" rel="noopener">https://support.microsoft.com/en-us/help/4073235/cloud-protections-speculative-execution-side-channel-vulnerabilities</a></li>
-</ul>
-<p>2.2 Linux</p>
-<p>Linux内核开发者Thomas Gleixner在2017年12月在Linux内核邮件列表中就新的KAISER隔离补丁发布了说明。目前有人怀疑这批补丁可能正是为了解决Linux系统当中的Metldown与Spectre漏洞。具体如下：</p>
-<ul>
-<li><a href="https://lkml.org/lkml/2017/12/4/709" target="_blank" rel="noopener">https://lkml.org/lkml/2017/12/4/709</a></li>
-</ul>
-<p>2.3 RedHat</p>
-<p>红帽公司已经发布一项建议，其中列出受到影响的产品及其当前状态。建议内容表明：对于正在运行受影响版本产品的红帽客户，强烈建议用户尽快根据指导清单进行更新。所有受影响产品都应安装修复补丁，借以缓解CVE-2017-5753 (变种1)与CVE-2017-5754 (变种3)漏洞。CVE-2017-5715(变种2)可通过本地以及虚拟访客边界两种方式被加以利用。具体如下：</p>
-<ul>
-<li><a href="https://access.redhat.com/security/vulnerabilities/speculativeexecution?sc_cid=701f2000000tsLNAAY&amp;" target="_blank" rel="noopener">https://access.redhat.com/security/vulnerabilities/speculativeexecution?sc_cid=701f2000000tsLNAAY&amp;</a></li>
-</ul>
-<p>2.4 安卓</p>
-<p>Android团队于2018年1月更新了安全通告：CVE-2017-5715、CVE-2017-5753以及CVE-2017-5754为已经得到公开披露的一系列与处理器内推测执行相关的漏洞。Android尚未发现任何在基于ARM的Android设备之上重现上述漏洞以进行的未授权信息泄露行为。为了提供额外的保护措施，本公告当中包含的CVE-2017-13218更新减少了对高精度定时器的访问，旨在限制旁路攻击（例如CVE-2017-5715、CVE-2017-5753以及CVE-2017-5754）所有已知变种对ARM处理器的影响。具体如下：</p>
-<ul>
-<li><a href="https://source.android.com/security/bulletin/2018-01-01" target="_blank" rel="noopener">https://source.android.com/security/bulletin/2018-01-01</a></li>
-</ul>
-<p>3、浏览器</p>
-<p>利用漏洞在浏览器中进行攻击依赖于新特性SharedArrayBuffer和用于高精度时间计算的函数performance.now。各个浏览器表示都采取了以下两个缓解措施：</p>
-<ul>
-<li>移除浏览器中可用于攻击的SharedArrayBuffer特性</li>
-<li>降低用于高精度时间计算的函数performance.now的精确性</li>
-</ul>
-<p>加上这两个缓解措施后，JS版本的漏洞PoC代码将无法触发：</p>
-<p><img src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==" alt="img"></p>
-<p>3.1 Microsoft Edge</p>
-<p>微软已经发布了浏览器补丁：</p>
-<ul>
-<li><a href="https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002" target="_blank" rel="noopener">https://portal.msrc.microsoft.com/en-US/security-guidance/advisory/ADV180002</a></li>
-</ul>
-<p>3.2 FireFox</p>
-<p>Mozilla从FireFox 57版本开始采取了这两个缓解措施：</p>
-<ul>
-<li><a href="https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/" target="_blank" rel="noopener">https://blog.mozilla.org/security/2018/01/03/mitigations-landing-new-class-timing-attack/</a></li>
-</ul>
-<p>3.3 Chrome</p>
-<p>谷歌从Chrome 64版本开始采取了这两个缓解措施：</p>
-<ul>
-<li><a href="https://security.googleblog.com/2018/01/todays-cpu-vulnerability-what-you-need.html" target="_blank" rel="noopener">https://security.googleblog.com/2018/01/todays-cpu-vulnerability-what-you-need.html</a></li>
-</ul>
-<p><strong>4、云服务厂商</strong></p>
-<p>4.1 Amazon</p>
-<p>Amazon方面已经发布一项安全公告，指出：此项安全漏洞广泛存在于过去20年推出的英特尔、AMD以及ARM等各类现代处理器架构当中，影响范围涵盖服务器、台式机以及移动设备。Amazon EC2体系中除极少数实例外，其余皆受到严格保护。剩余部分的修复工作将在接下来数小时内完成，并附有相关实例维护通知。虽然AWS所执行的更新能够切实保护底层基础设施，但为了充分解决此次问题，客户还应对实例中的操作系统进行修复。目前Amazon Linux更新已经开始发布，具体如下：</p>
-<ul>
-<li><a href="https://aws.amazon.com/security/security-bulletins/AWS-2018-013/" target="_blank" rel="noopener">https://aws.amazon.com/security/security-bulletins/AWS-2018-013/</a></li>
-</ul>
-<p>4.2 阿里云</p>
-<p>为解决处理器芯片的安全问题，阿里云将在北京时间2018年1月12日凌晨1点进行虚拟化底层的升级更新。届时，阿里云将采用热升级的方式，绝大多数客户不会受到影响。但个别客户可能需要手动重启，阿里云建议客户提前准备运营预案及数据备份。</p>
-<p>4.3 腾讯云</p>
-<p>腾讯云将于北京时间2018年1月10日凌晨01:00-05:00通过热升级技术对硬件平台和虚拟化平台进行后端修复，期间客户业务不会受到影响。对于极少量不支持热升级方式的，腾讯云另行安排时间手动重启修复，这部分服务器腾讯云安全团队将会另行进行通知，协商升级时间。</p>
-<p>### </p>
-<h3 id="五-漏洞修复存在的问题"><a href="#五-漏洞修复存在的问题" class="headerlink" title="五  漏洞修复存在的问题"></a><strong>五  漏洞修复存在的问题</strong></h3><p>由于漏洞是芯片底层设计上的缺陷导致的，修复起来会非常复杂，同时难以完美修复。从目前的情况来看，漏洞很难通过CPU微码修复，更多是依赖于OS级的修复程序。</p>
-<p>修复程序本身也存在诸多问题。以Windows 10为例，微软于北京时间1月4号凌晨紧急发布了1月份系统安全更新，但补丁存在明显的性能和兼容性的问题：</p>
-<ul>
-<li>更新可能会让受影响的系统性能下滑30%</li>
-<li>更新可能会导致部分软件（安全软件等）不兼容从而系统蓝屏</li>
-</ul>
-<p>出于兼容性考虑，Windows Update并不会在所有的电脑环境中进行自动更新，而是在其认为软件比较兼容的情况下才会进行自动更新。另外，对于有需要更新的用户，可以通过下载微软相关补丁包，进行手动运行修复安全威胁。</p>
-<p>根据我们的实际测试，性能问题对于普通用户来说，影响并不大：只有在极端的测试下，才会出现明显的性能问题；而正常的使用过程中一般不会出现。但是兼容性问题确实比较严重：在有安全软件，以及一些游戏的电脑上，安装补丁比较容易出现蓝屏现象。这也使得我们和其他安全厂商采取了比较保守的策略，暂时不主动推送微软的补丁，避免造成用户电脑无法正常使用。</p>
-<h3 id="六-漏洞对普通用户的影响"><a href="#六-漏洞对普通用户的影响" class="headerlink" title="六 漏洞对普通用户的影响"></a><strong>六 漏洞对普通用户的影响</strong></h3><p>虽然漏洞影响范围广泛，并引起全球关注，但受影响最大的主要是云服务厂商，对于普通用户来说，大可不必过于恐慌。</p>
-<p>首先，虽然漏洞细节以及PoC已经公开，但是并不能直接运用于攻击。漏洞运用于真实攻击还有许多细节问题需要解决，目前也没有一个稳定通用，同时可以造成明显严重后果（窃取账号密码等）的漏洞利用代码；</p>
-<p>其次，我们和其他安全厂商目前也还没有监控到利用这些漏洞进行的真实攻击，一旦出现真实攻击，我们将第一时间跟进，确保用户安全；</p>
-<p>另外，对于普通用户而言，漏洞可造成的主要危害在于用浏览器访问了一个带有漏洞利用代码的网页，导致敏感信息（账号密码等）泄露。只要养成良好的上网习惯，不轻易点击陌生人发来的链接，基本不会受到漏洞影响；同时，浏览器针对漏洞发布的补丁和缓解措施简单有效，而且不会造成性能下降或兼容性问题，用户可以选择将浏览器升级到最新版本，从而避免受到漏洞攻击。</p>
-<h3 id="七-结语"><a href="#七-结语" class="headerlink" title="七 结语"></a><strong>七 结语</strong></h3><p>这些漏洞未来一段时间内仍然是各界关注的重点，腾讯电脑管家安全团队将对漏洞动态保持持续关注，同时对漏洞做更加深入的分析和研究，从而为广大用户提供更加准确的参考信息，以及更加可靠的解决方案。</p>
+  
+    <a href="/2018/03/28/影响全球的 CPU 漏洞深度解读：熔断与幽灵/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
 
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
   
 </article>
 
+    <div id="toc" class="toc-article">
+    <strong class="toc-title">文章目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用-Shell-脚本掩盖-Linux-服务器上的操作痕迹"><span class="toc-number">1.</span> <span class="toc-text">使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹</span></a></li></ol>
+</div>
+<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+<script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+<script>
+    var valueHide = "隐藏目录";
+    var valueShow = "显示目录";
+
+    if ($(".left-col").is(":hidden")) {
+        $("#tocButton").attr("value", valueShow);
+    }
+    $("#tocButton").click(function() {
+        if ($("#toc").is(":hidden")) {
+            $("#tocButton").attr("value", valueHide);
+            $("#toc").slideDown(320);
+        }
+        else {
+            $("#tocButton").attr("value", valueShow);
+            $("#toc").slideUp(350);
+        }
+    })
+    if ($(".toc").length < 1) {
+        $("#toc, #tocButton").hide();
+    }
+</script>
 
 
 
 
 
+<div class="bdsharebuttonbox">
+	<a href="#" class="fx fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+	<a href="#" class="fx fa-weixin bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+	<a href="#" class="fx fa-qq bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a>
+	<a href="#" class="fx fa-facebook-official bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
+	<a href="#" class="fx fa-twitter bds_twi" data-cmd="twi" title="分享到Twitter"></a>
+	<a href="#" class="fx fa-linkedin bds_linkedin" data-cmd="linkedin" title="分享到linkedin"></a>
+	<a href="#" class="fx fa-files-o bds_copy" data-cmd="copy" title="分享到复制网址"></a>
+</div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 
 
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/03/27/hello-world/" class="article-date">
-      <time datetime="2018-03-27T10:43:33.035Z" itemprop="datePublished">2018-03-27</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
+
     
-      <input type="hidden" class="isFancy" />
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'luuman',
+      repo: 'luuman.github.io',
+      oauth: {
+        client_id: '',
+        client_secret: '',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
-    
-      <header class="article-header">
+
+
+
+    <div class="scroll" id="post-nav-button">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/27/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-      
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        
+            <a href="/2018/03/28/影响全球的 CPU 漏洞深度解读：熔断与幽灵/" title="下一篇: ">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
     </div>
-    
-    <div class="article-info article-info-index">
-      
-      
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/04/02/使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹/">使用 Shell 脚本掩盖 Linux 服务器上的操作痕迹</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/28/影响全球的 CPU 漏洞深度解读：熔断与幽灵/">影响全球的 CPU 漏洞深度解读：熔断与幽灵</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/03/27/hello-world/">Hello World</a></li></ul>
+    <script src="https://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
+    <script>
+        $(".post-list").addClass("toc-article");
+        $(".post-list-item a").attr("target","_blank");
+        $("#post-nav-button > a:nth-child(2)").click(function() {
+            $(".fa-bars, .fa-times").toggle();
+            $(".post-list").toggle(300);
+            if ($(".toc").length > 0) {
+                $("#toc, #tocButton").toggle(200, function() {
+                    if ($(".switch-area").is(":visible")) {
+                        $("#tocButton").attr("value", valueHide);
+                        }
+                    })
+            }
+            else {
+            }
+        })
+    </script>
 
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
 
 
-
-
-
-
-
-
-
-  
-  
+    <script>
+        
+    </script>
 </div>
       <footer id="footer">
     <div class="outer">
